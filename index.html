@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessClub</title>
+    <link rel="stylesheet" href="css\stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* reset css */
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            color: white;
+            background: url("img/fit_bg.jpg");
+            background-size: cover;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+        .navbar a:active,
+        .navbar a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline;
+            /* float: left; */
+            padding: 0px 5px;
+            margin: 0px 35px;
+        }
+
+        .left {
+            /* position: absolute; */
+            /* left: 80px; */
+            /* top: 12px; */
+            /* border: 2px solid yellow; */
+            /* display: inline-block; */
+            float: left;
+            text-align: center;
+            width: 205px;
+            height: 2px;
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            border-radius: 10px;
+            display: block;
+            width: 50%;
+            margin: 2px auto;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            position: absolute;
+            right: 20px;
+            top: 17px;
+        }
+
+        .left img {
+            width: 57px;
+        }
+
+        .left span {
+            position: absolute;
+            margin: 0px 10px;
+            top: 21px;
+            font-size: 14px;
+        }
+
+        .btn {
+            margin: 0px 10px;
+            padding: 4px 14px;
+            color: white;
+            border: 2px solid gray;
+            background-color: black;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+
+        }
+
+        .btn:hover {
+            color: red;
+            background-color: rgb(99, 91, 91);
+        }
+
+        .container {
+            float: left;
+            border: 2px solid white;
+            border-radius: 16px;
+            padding: 20px 45px;
+            margin: 0px 86px;
+            margin-top: 70px;
+            width: 50%;
+        }
+
+        .header {
+            position: sticky;
+            top: 0px;
+            border: 2px solid black;
+            overflow: auto;
+            background-color: black;
+        }
+
+        .form-group {
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            text-align: center;
+            font-size: 16px;
+            display: block;
+            width: 77%;
+            margin: 25px auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #ffd1d1;
+        }
+
+        .submit button {
+            text-align: center;
+            width: 167px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .submit {
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit button:hover {
+            background-color: red;
+        }
+        .container2{
+            float: right;
+            margin: 111px 50px;
+            border: 2px solid white;
+            width:354px;
+            height: 325px;
+        }
+        .container2 img{
+            width:350px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/fit_logo.jpg" alt="logo" id="logo">
+            <span>FitnessClub</span>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+        <!-- right for search button -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Doon now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" class="form-group" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-group" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-group" placeholder="Enter your mobile no">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-group" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                Select your gender :<input type="radio" name="gander" value="male">male <input type="radio"
+                    name="gander" value="female">female
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-group" placeholder="Enter your locality">
+            </div>
+
+            <div class="submit">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container2">
+        <img src="img/fitness-quotes.jpg" alt="">
+    </div>
+</body>
+
+</html>
